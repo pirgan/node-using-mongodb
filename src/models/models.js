@@ -1,15 +1,15 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 export const ProductSchema = new Schema({
     name: {
-        type: 'String',
-        required: 'Enter a Product name',
+        type: String,
+        required: 'Enter a product name'
     },
     description: {
         type: String,
-        required: 'Enter a product description'
+        required: 'Enter a description'
     },
     category: {
         type: String
@@ -21,4 +21,4 @@ export const ProductSchema = new Schema({
         type: Date,
         default: Date.now
     }
-})
+});
